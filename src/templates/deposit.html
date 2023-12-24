@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Deposit
+{% endblock %}
+
+{% block main %}
+<form action="/deposit" method="post">
+    <div class="mb-3">
+        <label class="mb-3 fw-bold" for="deposit">Deposit Funds</label>
+        <input class="form-control mx-auto w-auto mb-3" type="password" id="password" name="password"
+            placeholder="Password" minlength="8" required>
+        <input class="form-control mx-auto w-auto mb-3" type="number" id="sum" name="sum" placeholder="Money amount" step="0.01" required>
+        <button class="btn btn-primary btn-sm" type="submit">Confirm</button>
+    </div>
+</form>
+{% endblock %}
